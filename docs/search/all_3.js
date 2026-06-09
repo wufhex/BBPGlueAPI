@@ -34,7 +34,7 @@ var searchData=
   ['disobeying_31',['Disobeying',['../classBBPGlue_1_1API_1_1BBPNpc.html#abadc17639b51601067eede2db6901b2c',1,'BBPGlue.API.BBPNpc.Disobeying'],['../classBBPGlue_1_1API_1_1BBPPlayer.html#acb10780c3465fbcab246c6993e77a574',1,'BBPGlue.API.BBPPlayer.Disobeying']]],
   ['distancecheck_32',['DistanceCheck',['../classBBPGlue_1_1API_1_1BBPNpc.html#a218567cac57ee51872ce423b2b316eeb',1,'BBPGlue::API::BBPNpc']]],
   ['distract_33',['Distract',['../classBBPGlue_1_1API_1_1BBPBaldi.html#a46633d4ea145777f86154d701395feb0',1,'BBPGlue::API::BBPBaldi']]],
-  ['do_20i_20need_20harmony_34',['Do I need Harmony?',['../index.html#autotoc_md30',1,'']]],
+  ['do_20i_20need_20harmony_20or_20custom_20patches_34',['Do I Need Harmony or Custom Patches?',['../index.html#autotoc_md30',1,'']]],
   ['does_20bbpglue_20modify_20game_20files_35',['Does BBPGlue modify game files?',['../index.html#autotoc_md26',1,'']]],
   ['does_20bbpglue_20redistribute_20bb_20assets_36',['Does BBPGlue redistribute BB+ assets?',['../index.html#autotoc_md27',1,'']]],
   ['door_37',['Door',['../classBBPGlue_1_1API_1_1BBPElevator.html#adcf2c23d594c1b5a385cc611d559d999',1,'BBPGlue::API::BBPElevator']]],

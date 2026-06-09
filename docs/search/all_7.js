@@ -3,7 +3,7 @@ var searchData=
   ['hammer_0',['Hammer',['../classBBPGlue_1_1API_1_1BBPDrReflex.html#a87dbc6b067cc0355315f7e685ec907e6',1,'BBPGlue::API::BBPDrReflex']]],
   ['hammercheck_1',['HammerCheck',['../classBBPGlue_1_1API_1_1BBPDrReflex.html#a931a9f797153f8220967e40ff3ed514a',1,'BBPGlue::API::BBPDrReflex']]],
   ['hammersound_2',['HammerSound',['../classBBPGlue_1_1API_1_1BBPDrReflex.html#a43a96d6e8b021c2012c69ed5d9ba07ab',1,'BBPGlue::API::BBPDrReflex']]],
-  ['harmony_3',['Do I need Harmony?',['../index.html#autotoc_md30',1,'']]],
+  ['harmony_20or_20custom_20patches_3',['Do I Need Harmony or Custom Patches?',['../index.html#autotoc_md30',1,'']]],
   ['has_4',['Has',['../classBBPGlue_1_1API_1_1BBPItems.html#a1ff5673eab027516d49ee4170721c801',1,'BBPGlue::API::BBPItems']]],
   ['hasanimation_5',['HasAnimation',['../classBBPGlue_1_1API_1_1BBPSoundObject.html#a6920f3e04850ca495266fe31bb33e155',1,'BBPGlue::API::BBPSoundObject']]],
   ['hasanyusableitem_6',['HasAnyUsableItem',['../classBBPGlue_1_1API_1_1BBPItems.html#a4585e9ee0f9c23a3a1a9b599522fbe3b',1,'BBPGlue::API::BBPItems']]],

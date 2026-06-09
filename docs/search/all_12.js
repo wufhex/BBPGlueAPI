@@ -156,7 +156,7 @@ var searchData=
   ['staticobject_153',['StaticObject',['../classBBPGlue_1_1API_1_1HUD_1_1BBPHudAnnouncements.html#ae2f33da4b4f1d3025d558bc5388ded81',1,'BBPGlue::API::HUD::BBPHudAnnouncements']]],
   ['staticsprite1_154',['StaticSprite1',['../classBBPGlue_1_1API_1_1HUD_1_1BBPHudAnnouncements.html#accd0553593224968de5679b69fc9c883',1,'BBPGlue::API::HUD::BBPHudAnnouncements']]],
   ['staticsprite2_155',['StaticSprite2',['../classBBPGlue_1_1API_1_1HUD_1_1BBPHudAnnouncements.html#a339b5cf679b1573ed19b53929f103a48',1,'BBPGlue::API::HUD::BBPHudAnnouncements']]],
-  ['status_156',['Status',['../classBBPGlue_1_1API_1_1BBPEvents.html#ad163df8939fd797da522eb33ec7c0f50',1,'BBPGlue.API.BBPEvents.Status'],['../index.html#autotoc_md31',1,'Status']]],
+  ['status_156',['Status',['../classBBPGlue_1_1API_1_1BBPEvents.html#ad163df8939fd797da522eb33ec7c0f50',1,'BBPGlue::API::BBPEvents']]],
   ['stealitem_157',['StealItem',['../classBBPGlue_1_1API_1_1BBPBully.html#a655343fc735eccae90ef9a8f6c9dad13',1,'BBPGlue::API::BBPBully']]],
   ['stickerpack_158',['StickerPack',['../namespaceBBPGlue_1_1API.html#a43f5029cea229d40f2bac84344c58e61af5d4d7397e5e3016e4ab42ed233b2757',1,'BBPGlue::API']]],
   ['stillhasitem_159',['StillHasItem',['../classBBPGlue_1_1API_1_1BBPPickup.html#a7924ed2c83b683a3f3fd70c6392129b9',1,'BBPGlue::API::BBPPickup']]],

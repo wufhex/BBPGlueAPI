@@ -7,7 +7,7 @@ var searchData=
   ['navigationstatemachine_4',['NavigationStateMachine',['../classBBPGlue_1_1API_1_1BBPNpc.html#a28290041bf400d3777f067d9a960a3f4',1,'BBPGlue::API::BBPNpc']]],
   ['navigationupdatesfrozen_5',['NavigationUpdatesFrozen',['../classBBPGlue_1_1API_1_1BBPEnvironment.html#acbd7862a1ee057b93b1954117ed26d00',1,'BBPGlue::API::BBPEnvironment']]],
   ['navigator_6',['Navigator',['../classBBPGlue_1_1API_1_1BBPNpc.html#aec693cf6d649448033a70a582f82725a',1,'BBPGlue::API::BBPNpc']]],
-  ['need_20harmony_7',['Do I need Harmony?',['../index.html#autotoc_md30',1,'']]],
+  ['need_20harmony_20or_20custom_20patches_7',['Do I Need Harmony or Custom Patches?',['../index.html#autotoc_md30',1,'']]],
   ['needlespeed_8',['NeedleSpeed',['../classBBPGlue_1_1API_1_1BBPHud.html#a7e64e77e599a57c34a53ba2a16ac8d89',1,'BBPGlue::API::BBPHud']]],
   ['nextlevel_9',['NextLevel',['../classBBPGlue_1_1API_1_1BBPScene.html#a3622b7960b37878f7c4ce993c45dd38f',1,'BBPGlue::API::BBPScene']]],
   ['nextpoint_10',['NextPoint',['../classBBPGlue_1_1API_1_1BBPNpc.html#a904625106970c10228076ce6451aa085',1,'BBPGlue::API::BBPNpc']]],

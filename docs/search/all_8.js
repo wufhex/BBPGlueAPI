@@ -2,7 +2,7 @@ var searchData=
 [
   ['i_20create_20custom_20items_0',['Can I create custom items?',['../index.html#autotoc_md29',1,'']]],
   ['i_20create_20custom_20npcs_1',['Can I create custom NPCs?',['../index.html#autotoc_md28',1,'']]],
-  ['i_20need_20harmony_2',['Do I need Harmony?',['../index.html#autotoc_md30',1,'']]],
+  ['i_20need_20harmony_20or_20custom_20patches_2',['Do I Need Harmony or Custom Patches?',['../index.html#autotoc_md30',1,'']]],
   ['icon_3',['Icon',['../classBBPGlue_1_1API_1_1BBPPickup.html#a625c1df523b8f3ca7b9966e52dbe4474',1,'BBPGlue::API::BBPPickup']]],
   ['iconpre_4',['IconPre',['../classBBPGlue_1_1API_1_1BBPPickup.html#acb7ab6def811a49809e093934fed5e43',1,'BBPGlue::API::BBPPickup']]],
   ['id_5',['Id',['../structBBPGlue_1_1API_1_1BBPAuthoredPrefab.html#a5f773bbdf6595bc3f81a706ea3f36249',1,'BBPGlue::API::BBPAuthoredPrefab']]],

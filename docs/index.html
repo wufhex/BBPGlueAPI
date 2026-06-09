@@ -396,6 +396,12 @@ Compatibility</h1>
 <p><a class="el" href="namespaceBBPGlue.html">BBPGlue</a> attempts to remain compatible with future BB+ updates whenever possible.</p>
 <p>If the game version differs from the version <a class="el" href="namespaceBBPGlue.html">BBPGlue</a> was built against, a warning may appear in the console.</p>
 <p>This warning is informational and does not necessarily indicate a problem.</p>
+<p>Alpha Limitations:</p><ul>
+<li>API may change</li>
+<li>Some callbacks may be incomplete or untested</li>
+<li>Compatibility only tested on BB+ 0.14.2</li>
+<li>Advanced custom NPC behavior is experimental and might be untested</li>
+</ul>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md24"></a>
 FAQ</h1>
 <h6 class="doxsection"><a class="anchor" id="autotoc_md25"></a>
@@ -413,14 +419,18 @@ Can I create custom NPCs?</h3>
 Can I create custom items?</h3>
 <p>Yes.</p>
 <h3 class="doxsection"><a class="anchor" id="autotoc_md30"></a>
-Do I need Harmony?</h3>
-<p><a class="el" href="namespaceBBPGlue.html">BBPGlue</a> uses Harmony internally, but most mods using <a class="el" href="namespaceBBPGlue.html">BBPGlue</a> do not need to write Harmony patches themselves.</p>
+Do I Need Harmony or Custom Patches?</h3>
+<p>Usually, no.</p>
+<p><a class="el" href="namespaceBBPGlue.html">BBPGlue</a> already uses Harmony internally and exposes most common game functionality through wrappers, callbacks, and helper APIs. For many mods, you can create custom content, listen for game events, and modify gameplay behavior without writing a single Harmony patch.</p>
+<p>If the functionality you need is not currently exposed by <a class="el" href="namespaceBBPGlue.html">BBPGlue</a>, you have several options:</p>
+<ol type="1">
+<li>Open an Issue and request the feature.</li>
+<li>Submit a Pull Request.</li>
+<li>Use Harmony directly in your mod.</li>
+<li>Use utilities from BBPGlue.Core to simplify reflection and runtime interaction.</li>
+</ol>
+<p><a class="el" href="namespaceBBPGlue.html">BBPGlue</a> is designed to reduce Harmony and reflection boilerplate, not prevent advanced users from accessing the game's internals when necessary.</p>
 <h1 class="doxsection"><a class="anchor" id="autotoc_md31"></a>
-Status</h1>
-<p><a class="el" href="namespaceBBPGlue.html">BBPGlue</a> is currently in active development.</p>
-<p>New wrappers, callbacks, and utilities are continuously being added.</p>
-<p>Bug reports, feature requests, pull requests, and community contributions are welcome.</p>
-<h1 class="doxsection"><a class="anchor" id="autotoc_md32"></a>
 License</h1>
 <p><a class="el" href="namespaceBBPGlue.html">BBPGlue</a> is licensed under the MIT License. Attribution is appreciated but not required. </p>
 </div></div><!-- PageDoc -->

@@ -9,5 +9,6 @@ var searchData=
   ['create_20custom_20npcs_6',['Can I create custom NPCs?',['../index.html#autotoc_md28',1,'']]],
   ['custom_20behavior_7',['Custom Behavior',['../index.html#autotoc_md17',1,'']]],
   ['custom_20items_8',['Can I create custom items?',['../index.html#autotoc_md29',1,'']]],
-  ['custom_20npcs_9',['Can I create custom NPCs?',['../index.html#autotoc_md28',1,'']]]
+  ['custom_20npcs_9',['Can I create custom NPCs?',['../index.html#autotoc_md28',1,'']]],
+  ['custom_20patches_10',['Do I Need Harmony or Custom Patches?',['../index.html#autotoc_md30',1,'']]]
 ];

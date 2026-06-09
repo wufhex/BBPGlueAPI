@@ -53,8 +53,7 @@ var NAVTREE =
     ] ],
     [ "Compatibility", "index.html#autotoc_md23", null ],
     [ "FAQ", "index.html#autotoc_md24", null ],
-    [ "Status", "index.html#autotoc_md31", null ],
-    [ "License", "index.html#autotoc_md32", null ],
+    [ "License", "index.html#autotoc_md31", null ],
     [ "Packages", "namespaces.html", [
       [ "Package List", "namespaces.html", "namespaces_dup" ],
       [ "Package Members", "namespacemembers.html", [
@@ -99,7 +98,7 @@ var NAVTREEINDEX =
 "classBBPGlue_1_1API_1_1BBPPlaytime.html#a7e18fd5da5b06b74d880c7e0a72a7138",
 "classBBPGlue_1_1API_1_1BBPPrincipal.html#a662f0d3c67ef5e4c22f87cb27a520f53",
 "classBBPGlue_1_1API_1_1BBPScene.html#a603b757422b92a007dff70034565e9a1",
-"namespaceBBPGlue_1_1API.html"
+"namespaceBBPGlue_1_1API.html#a1da3ffa8d26a24ebc3985028c6fa4e03"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronization';

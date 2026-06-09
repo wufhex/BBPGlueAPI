@@ -100,5 +100,6 @@ var searchData=
   ['custom_20behavior_97',['Custom Behavior',['../index.html#autotoc_md17',1,'']]],
   ['custom_20items_98',['Can I create custom items?',['../index.html#autotoc_md29',1,'']]],
   ['custom_20npcs_99',['Can I create custom NPCs?',['../index.html#autotoc_md28',1,'']]],
-  ['customprefabs_100',['CustomPrefabs',['../classBBPGlue_1_1API_1_1BBPPrefabs.html#a15a8cd23361abfe0506726efda82ad95',1,'BBPGlue::API::BBPPrefabs']]]
+  ['custom_20patches_100',['Do I Need Harmony or Custom Patches?',['../index.html#autotoc_md30',1,'']]],
+  ['customprefabs_101',['CustomPrefabs',['../classBBPGlue_1_1API_1_1BBPPrefabs.html#a15a8cd23361abfe0506726efda82ad95',1,'BBPGlue::API::BBPPrefabs']]]
 ];

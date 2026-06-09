@@ -79,9 +79,10 @@ var searchData=
   ['opensilent_76',['OpenSilent',['../classBBPGlue_1_1API_1_1BBPDoor.html#aef3553a8ff7e2bc288fd12281dce20c9',1,'BBPGlue::API::BBPDoor']]],
   ['openstate_77',['OpenState',['../classBBPGlue_1_1API_1_1BBPDoor.html#a7eae804b6152c1d673063807fe076613',1,'BBPGlue::API::BBPDoor']]],
   ['opentimed_78',['OpenTimed',['../classBBPGlue_1_1API_1_1BBPDoor.html#a79af9d4c3f2cb5648ea6c7bd0af61d19',1,'BBPGlue::API::BBPDoor']]],
-  ['othersidedirectedintvector2_79',['OtherSideDirectedIntVector2',['../classBBPGlue_1_1API_1_1BBPDoor.html#a81fa040948a5a7728a65295028789be0',1,'BBPGlue::API::BBPDoor']]],
-  ['overridedisabled_80',['OverrideDisabled',['../classBBPGlue_1_1API_1_1BBPItemObject.html#ae876107da7d0ade2e5e1bc84fcf73a31',1,'BBPGlue::API::BBPItemObject']]],
-  ['overrideenabled_81',['OverrideEnabled',['../classBBPGlue_1_1API_1_1BBPSeed.html#a33ee4ea2414fd5ed561357c8f980db1e',1,'BBPGlue::API::BBPSeed']]],
-  ['overrideseed_82',['OverrideSeed',['../classBBPGlue_1_1API_1_1BBPSeed.html#aeea90fbef95f64cdfec6191f8dafdb1b',1,'BBPGlue::API::BBPSeed']]],
-  ['overridesourceposition_83',['OverrideSourcePosition',['../classBBPGlue_1_1API_1_1BBPAudioManager.html#a590706b0acdcaa020f2a7f163bfd31dc',1,'BBPGlue::API::BBPAudioManager']]]
+  ['or_20custom_20patches_79',['Do I Need Harmony or Custom Patches?',['../index.html#autotoc_md30',1,'']]],
+  ['othersidedirectedintvector2_80',['OtherSideDirectedIntVector2',['../classBBPGlue_1_1API_1_1BBPDoor.html#a81fa040948a5a7728a65295028789be0',1,'BBPGlue::API::BBPDoor']]],
+  ['overridedisabled_81',['OverrideDisabled',['../classBBPGlue_1_1API_1_1BBPItemObject.html#ae876107da7d0ade2e5e1bc84fcf73a31',1,'BBPGlue::API::BBPItemObject']]],
+  ['overrideenabled_82',['OverrideEnabled',['../classBBPGlue_1_1API_1_1BBPSeed.html#a33ee4ea2414fd5ed561357c8f980db1e',1,'BBPGlue::API::BBPSeed']]],
+  ['overrideseed_83',['OverrideSeed',['../classBBPGlue_1_1API_1_1BBPSeed.html#aeea90fbef95f64cdfec6191f8dafdb1b',1,'BBPGlue::API::BBPSeed']]],
+  ['overridesourceposition_84',['OverrideSourcePosition',['../classBBPGlue_1_1API_1_1BBPAudioManager.html#a590706b0acdcaa020f2a7f163bfd31dc',1,'BBPGlue::API::BBPAudioManager']]]
 ];
