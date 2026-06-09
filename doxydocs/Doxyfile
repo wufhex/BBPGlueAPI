@@ -1,0 +1,62 @@
+PROJECT_NAME           = "Baldi's Basics Plus Glue API"
+PROJECT_BRIEF          = "Modding API for Baldi's Basics Plus"
+
+OUTPUT_DIRECTORY       = .
+HTML_OUTPUT            = ../docs
+
+INPUT                  = ../BBPGlue/src/API ../README.md
+USE_MDFILE_AS_MAINPAGE = ../README.md
+
+FILE_PATTERNS          = *.cs
+RECURSIVE              = YES
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = NO
+EXTRACT_STATIC         = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+
+GENERATE_HTML          = YES
+
+PROJECT_LOGO           = ../assets/baldi_icon.ico
+PROJECT_ICON           = ../assets/baldi_icon.ico
+
+HTML_COLORSTYLE        = LIGHT
+HTML_DYNAMIC_SECTIONS  = YES
+
+GENERATE_LATEX         = NO
+GENERATE_XML           = NO
+
+FULL_PATH_NAMES        = NO
+STRIP_FROM_PATH        = ../BBPGlue/src/API
+
+SORT_MEMBER_DOCS       = YES
+SORT_BRIEF_DOCS        = YES
+
+INLINE_INHERITED_MEMB  = YES
+INHERIT_DOCS           = YES
+
+QUIET                  = NO
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = NO
+
+JAVADOC_AUTOBRIEF      = YES
+OPTIMIZE_OUTPUT_JAVA   = YES
+
+SEARCHENGINE           = YES
+SERVER_BASED_SEARCH    = NO
+GENERATE_TREEVIEW      = YES
+DISABLE_INDEX          = NO
+FULL_SIDEBAR           = NO
+
+HTML_EXTRA_STYLESHEET  = doxygen-awesome-css/doxygen-awesome.css \
+                         doxygen-awesome-css/doxygen-awesome-sidebar-only.css \
+                         palette.css
+
+HTML_EXTRA_FILES       = assets/baldi_icon.ico \
+                         doxygen-awesome-css/doxygen-awesome-darkmode-toggle.js \
+                         doxygen-awesome-css/doxygen-awesome-fragment-copy-button.js \
+                         doxygen-awesome-css/doxygen-awesome-paragraph-link.js \
+                         doxygen-awesome-css/doxygen-awesome-interactive-toc.js
+
+HTML_HEADER            = header.html

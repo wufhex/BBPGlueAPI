@@ -1,0 +1,58 @@
+name: Build and Release
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: self-hosted
+
+    defaults:
+      run:
+        shell: bash
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Package plugin
+        run: |
+          rm -rf dist
+          mkdir -p dist/BBPGlue
+
+          if [ ! -d "$BBPGLUE_PUBLISH" ]; then
+            echo "Missing BBPGlue publish folder: $BBPGLUE_PUBLISH"
+            exit 1
+          fi
+
+          cp "$BBPGLUE_PUBLISH"/BBPGlue.* dist/BBPGlue/
+
+          cd dist
+          zip -r BBPGlue-latest.zip BBPGlue
+
+      - name: Create rolling tag
+        run: |
+          git tag -f latest
+          git push origin latest --force
+
+      - name: Create or update release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: Latest BBPGlueAPI Build
+          body: |
+            Automatic development build from `${{ github.sha }}`.
+
+            This build requires a legitimate Baldi's Basics Plus installation and BepInEx.
+
+            Thanks for using BBPGlueAPI ❤️!
+          make_latest: true
+          files: dist/BBPGlue-latest.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

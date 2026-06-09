@@ -1,0 +1,15 @@
+.vscode
+**/bin
+**/lib
+**/obj
+**/publish
+actions-runner
+docs/docs_out
+build.sh
+copy_dlls.sh
+install.sh
+run_baldi.sh
+setup_deps.sh
+doxygen.sh
+make_release.sh
+gen_docs.sh

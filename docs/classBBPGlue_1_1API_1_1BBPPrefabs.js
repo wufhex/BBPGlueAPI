@@ -1,0 +1,26 @@
+var classBBPGlue_1_1API_1_1BBPPrefabs =
+[
+    [ "ClearCustomPrefabs", "classBBPGlue_1_1API_1_1BBPPrefabs.html#a6d2deef9edf31fa12cc4e2619d150fea", null ],
+    [ "FindPrefabByName", "classBBPGlue_1_1API_1_1BBPPrefabs.html#a1efa80cb4e1d3095bb8aa79b5ddcef6c", null ],
+    [ "GetCustomPrefab", "classBBPGlue_1_1API_1_1BBPPrefabs.html#a16d9016fb5c9711311d07b9186cf8ad5", null ],
+    [ "GetItemName", "classBBPGlue_1_1API_1_1BBPPrefabs.html#a8b957bd41124de4ba4f9b735cd10e929", null ],
+    [ "GetItemObject", "classBBPGlue_1_1API_1_1BBPPrefabs.html#a6ebddcb991ab44a6a1bd03cddc1a059a", null ],
+    [ "GetItemObjectByIndex", "classBBPGlue_1_1API_1_1BBPPrefabs.html#a82272ac07ac278c21f9d962655f8a0d9", null ],
+    [ "GetItemObjectByName", "classBBPGlue_1_1API_1_1BBPPrefabs.html#ab4bee0fe2e81a1362a616d6ce165e1e6", null ],
+    [ "GetItemObjectByTypeName", "classBBPGlue_1_1API_1_1BBPPrefabs.html#a4e72f90d94eb97f75ce93dd25f346e50", null ],
+    [ "GetNpcCharacter", "classBBPGlue_1_1API_1_1BBPPrefabs.html#a967b9ff9cc6f6f1e695a9d6e54c95538", null ],
+    [ "GetNpcPrefabByCharacter", "classBBPGlue_1_1API_1_1BBPPrefabs.html#a2c0cd1bdabf432f1f6c6d3d80ca316c9", null ],
+    [ "GetNpcPrefabByIndex", "classBBPGlue_1_1API_1_1BBPPrefabs.html#a7a75dd7fb9d9f42113f120c0548a3884", null ],
+    [ "GetNpcPrefabByName", "classBBPGlue_1_1API_1_1BBPPrefabs.html#ad375be572568f874e6ed7e3288d40998", null ],
+    [ "GetNpcPrefabByTypeName", "classBBPGlue_1_1API_1_1BBPPrefabs.html#a5515fb333a0d7e0c4aa5d35cc7db410c", null ],
+    [ "GetPrefabName", "classBBPGlue_1_1API_1_1BBPPrefabs.html#ab2ebab4fecda9e029a4599e59fbda068", null ],
+    [ "Refresh", "classBBPGlue_1_1API_1_1BBPPrefabs.html#ad767d49491ab26ba7cc991cea69c9221", null ],
+    [ "RegisterCustomPrefab", "classBBPGlue_1_1API_1_1BBPPrefabs.html#a660bf48df5135742e637246f08ba9d10", null ],
+    [ "RemoveCustomPrefab", "classBBPGlue_1_1API_1_1BBPPrefabs.html#ad2b97e524d03a4903306c65e829ed73e", null ],
+    [ "SpawnAtPlayer", "classBBPGlue_1_1API_1_1BBPPrefabs.html#ac257386d75856a543d72ed723315b09d", null ],
+    [ "SpawnAtWorld", "classBBPGlue_1_1API_1_1BBPPrefabs.html#aafe2bda7d7fe30f1ca983d48a902c779", null ],
+    [ "SpawnByName", "classBBPGlue_1_1API_1_1BBPPrefabs.html#a7f5aa5b1cebf90e3c47d3a454cb15d6d", null ],
+    [ "CustomPrefabs", "classBBPGlue_1_1API_1_1BBPPrefabs.html#a15a8cd23361abfe0506726efda82ad95", null ],
+    [ "ItemObjects", "classBBPGlue_1_1API_1_1BBPPrefabs.html#a96ec0e8e40ed23e5765b8f7cdc804f8a", null ],
+    [ "NpcPrefabs", "classBBPGlue_1_1API_1_1BBPPrefabs.html#a79f26e77127163f18c7f405e38be92ae", null ]
+];

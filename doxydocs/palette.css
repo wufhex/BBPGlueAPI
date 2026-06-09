@@ -1,0 +1,137 @@
+:root {
+    /* Baldi Emerald */
+
+    --primary-color: #22c55e;
+    --primary-dark-color: #15803d;
+    --primary-light-color: #14532d;
+
+    --page-background-color: #050806;
+    --sidebar-background-color: #09100b;
+    --code-background-color: #1f3127;
+
+    --separator-color: #1f3127;
+
+    --keyword-color: #4ade80;
+    --variable-color: #86efac;
+
+    --border-radius-large: 10px;
+    --border-radius-medium: 6px;
+    --border-radius-small: 4px;
+}
+
+html,
+html.dark-mode {
+    color-scheme: dark;
+
+    --primary-color: #22c55e;
+    --primary-dark-color: #15803d;
+    --primary-light-color: #14532d;
+
+    --page-background-color: #050806;
+    --sidebar-background-color: #09100b;
+    --code-background-color: #101813;
+
+    --separator-color: #1f3127;
+
+    --keyword-color: #4ade80;
+    --variable-color: #86efac;
+}
+
+/* Hard override Doxygen Awesome surfaces */
+body,
+#top,
+#doc-content,
+.contents,
+.main,
+.fragment,
+div.fragment,
+div.line {
+    background-color: #050806 !important;
+    color: #d6d6d6 !important;
+}
+
+/* Sidebar */
+#side-nav,
+#nav-tree,
+#nav-tree-contents,
+#nav-tree .children_ul,
+#splitbar {
+    background-color: #09100b !important;
+    color: #d6d6d6 !important;
+}
+
+/* Header/title area */
+#titlearea,
+#projectname,
+#projectbrief {
+    background-color: #050806 !important;
+    color: #d6d6d6 !important;
+}
+
+/* Search box */
+#MSearchBox,
+#MSearchField,
+#MSearchSelectWindow,
+#MSearchResultsWindow {
+    background-color: #0d1510 !important;
+    color: #d6d6d6 !important;
+    border-color: #15803d !important;
+}
+
+#MSearchField::placeholder {
+    color: #6b7280 !important;
+}
+
+/* Links + selected nav */
+a,
+#nav-tree a,
+#nav-tree .label {
+    color: #d6d6d6 !important;
+}
+
+a:hover,
+#nav-tree a:hover,
+#nav-tree .selected a,
+#nav-tree .selected .label {
+    color: #4ade80 !important;
+}
+
+/* Active sidebar marker */
+#nav-tree .selected {
+    background-color: #122018 !important;
+    border-left: 4px solid #22c55e !important;
+}
+
+/* Code + tables */
+code,
+pre,
+.fragment,
+div.fragment {
+    background-color: #101813 !important;
+    border-color: #1f3127 !important;
+}
+
+table,
+.directory,
+.directory td,
+.memitem,
+.memproto,
+.memdoc {
+    background-color: #071009 !important;
+    border-color: #1f3127 !important;
+}
+
+/* Separators */
+hr,
+.memSeparator,
+.memberdecls,
+.directory tr {
+    border-color: #1f3127 !important;
+}
+
+/* Alerts */
+.alert-warning {
+    background-color: #102116 !important;
+    border-left: 5px solid #22c55e !important;
+    color: #d1fae5 !important;
+}
