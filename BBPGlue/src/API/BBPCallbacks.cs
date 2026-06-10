@@ -181,9 +181,14 @@ namespace BBPGlue.API
         public sealed class EntityCallbacks
         {
             /// <summary>
+            /// Raised just before an NPC is spawned.
+            /// </summary>
+            public event Action<BBPNpc, int, int>? OnNpcSpawnRequested;
+
+            /// <summary>
             /// Raised when an NPC is spawned.
             /// </summary>
-            public event Action<BBPNpc>? OnNpcSpawn;
+            public event Action<BBPNpc, int, int>? OnNpcSpawned;
 
             /// <summary>
             /// Raised when an NPC is despawned.
@@ -268,7 +273,8 @@ namespace BBPGlue.API
             /// </summary>
             public event Action<BBPNpc, Vector3>? OnNpcTargetPosition;
 
-            internal void RaiseNpcSpawn(object raw) => OnNpcSpawn?.Invoke(new BBPNpc(raw));
+            internal void RaiseNpcSpawnRequested(object raw, int x, int z) => OnNpcSpawnRequested?.Invoke(new BBPNpc(raw), x, z);
+            internal void RaiseNpcSpawned(object raw, int x, int z) => OnNpcSpawned?.Invoke(new BBPNpc(raw), x, z);
             internal void RaiseNpcDespawn(object raw) => OnNpcDespawn?.Invoke(new BBPNpc(raw));
             internal void RaiseNpcHearNoise(object raw) => OnNpcHearNoise?.Invoke(new BBPNpc(raw));
             internal void RaiseNpcSightPlayer(object raw) => OnNpcSightPlayer?.Invoke(new BBPNpc(raw));

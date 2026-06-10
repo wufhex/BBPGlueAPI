@@ -52,7 +52,13 @@ namespace BBPGlue.Core
 
         private static void RegisterEntity()
         {
-            BBP.Callbacks.Entity.OnNpcSpawn += npc => Log($"NPC Spawn: {npc.Character}");
+            BBP.Callbacks.Entity.OnNpcSpawnRequested += (npc, x, z) =>
+            {
+                BBPConsole.Log(
+                    $"Spawning {npc.Name} at cell ({x}, {z})"
+                );
+            };
+            
             BBP.Callbacks.Entity.OnNpcDespawn += npc => Log($"NPC Despawn: {npc.Character}");
             BBP.Callbacks.Entity.OnNpcHearNoise += npc => Log($"NPC Hear Noise: {npc.Character}");
             BBP.Callbacks.Entity.OnNpcSightPlayer += npc => Log($"NPC Sight Player: {npc.Character}");

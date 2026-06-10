@@ -308,13 +308,37 @@ namespace BBPGlue.API
         }
 
         /// <summary>
-        /// Spawns an NPC using a raw prefab and grid position.
+        /// Spawns an NPC prefab at the specified BB+ grid cell.
+        /// </summary>
+        /// <param name="npc">The NPC prefab wrapper.</param>
+        /// <param name="x">Grid X coordinate.</param>
+        /// <param name="z">Grid Z coordinate.</param>
+        /// <returns>The spawned NPC, or null if spawning fails.</returns>
+        public BBPNpc? SpawnNpc(BBPNpc npc, int x, int z)
+        {
+            if (npc.Raw == null)
+                return null;
+
+            return SpawnNpc(npc.Raw, x, z);
+        }
+
+        /// <summary>
+        /// Spawns a raw NPC prefab at the specified BB+ grid cell.
         /// </summary>
         /// <param name="npcPrefab">The raw NPC prefab.</param>
-        /// <param name="gridPosition">The target grid position.</param>
+        /// <param name="x">Grid X coordinate.</param>
+        /// <param name="z">Grid Z coordinate.</param>
         /// <returns>The spawned NPC, or null if spawning fails.</returns>
-        public BBPNpc? SpawnNpc(object npcPrefab, object gridPosition)
+        public BBPNpc? SpawnNpc(object npcPrefab, int x, int z)
         {
+            if (npcPrefab == null || Raw == null)
+                return null;
+
+            object? gridPosition = CreateIntVector2(x, z);
+
+            if (gridPosition == null)
+                return null;
+
             object? spawned = ReflectionUtil.Call<object>(
                 Raw,
                 "SpawnNPC",
@@ -323,6 +347,24 @@ namespace BBPGlue.API
             );
 
             return spawned != null ? new BBPNpc(spawned) : null;
+        }
+
+        /// <summary>
+        /// Creates a BB+ IntVector2 grid position.
+        /// </summary>
+        private static object? CreateIntVector2(int x, int z)
+        {
+            object? position = ReflectionUtil.CreateInstance(
+                "IntVector2"
+            );
+
+            if (position == null)
+                return null;
+
+            ReflectionUtil.SetField(position, "x", x);
+            ReflectionUtil.SetField(position, "z", z);
+
+            return position;
         }
 
         /// <summary>
@@ -352,7 +394,10 @@ namespace BBPGlue.API
             if (gridPosition == null)
                 return null;
 
-            return SpawnNpc(npcPrefab, gridPosition);
+            int x = ReflectionUtil.GetField<int>(gridPosition, "x");
+            int z = ReflectionUtil.GetField<int>(gridPosition, "z");
+
+            return SpawnNpc(npcPrefab, x, z);
         }
 
         /// <summary>

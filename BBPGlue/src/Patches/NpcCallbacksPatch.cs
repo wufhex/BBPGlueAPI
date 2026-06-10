@@ -3,9 +3,73 @@ using System.Reflection;
 using HarmonyLib;
 using UnityEngine;
 using BBPGlue.API;
+using BBPGlue.Core;
 
 namespace BBPGlue.Patches
 {
+    [HarmonyPatch]
+    public static class EnvironmentSpawnNpcPatch
+    {
+        [HarmonyTargetMethod]
+        private static MethodBase? TargetMethod()
+        {
+            return AccessTools.Method(
+                AccessTools.TypeByName("EnvironmentController"),
+                "SpawnNPC",
+                new[]
+                {
+                    AccessTools.TypeByName("NPC"),
+                    AccessTools.TypeByName("IntVector2")
+                }
+            );
+        }
+
+        [HarmonyPrefix]
+        private static bool Prefix(
+            object npc,
+            object position,
+            ref object? __result
+        )
+        {
+            int x = ReflectionUtil.GetField<int>(position, "x");
+            int z = ReflectionUtil.GetField<int>(position, "z");
+
+            bool cancel = BBPCallbacks.RunCancelable(() =>
+            {
+                BBP.Callbacks.Entity.RaiseNpcSpawnRequested(
+                    npc,
+                    x,
+                    z
+                );
+            });
+
+            if (!cancel)
+                return true;
+
+            __result = null;
+            return false;
+        }
+
+        [HarmonyPostfix]
+        private static void Postfix(
+            object? __result,
+            object position
+        )
+        {
+            if (__result == null)
+                return;
+
+            int x = ReflectionUtil.GetField<int>(position, "x");
+            int z = ReflectionUtil.GetField<int>(position, "z");
+
+            BBP.Callbacks.Entity.RaiseNpcSpawned(
+                __result,
+                x,
+                z
+            );
+        }
+    }
+
     [HarmonyPatch]
     public static class NpcDespawnPatch
     {

@@ -137,8 +137,10 @@ Events</h2></td></tr>
 <tr class="memdesc:ac93baae3a5643d9d81e29f9d15883401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raised when an NPC makes a navigation decision.  <br /></td></tr>
 <tr class="memitem:af8637b61847c9c481382d88fe4d2db32" id="r_af8637b61847c9c481382d88fe4d2db32"><td class="memItemLeft">Action&lt; <a class="el" href="classBBPGlue_1_1API_1_1BBPNpc.html">BBPNpc</a> &gt;?&#160;</td><td class="memItemRight"><a class="el" href="#af8637b61847c9c481382d88fe4d2db32">OnNpcSightPlayer</a></td></tr>
 <tr class="memdesc:af8637b61847c9c481382d88fe4d2db32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raised when an NPC sees the player.  <br /></td></tr>
-<tr class="memitem:a0cad01907532200780aad57594899312" id="r_a0cad01907532200780aad57594899312"><td class="memItemLeft">Action&lt; <a class="el" href="classBBPGlue_1_1API_1_1BBPNpc.html">BBPNpc</a> &gt;?&#160;</td><td class="memItemRight"><a class="el" href="#a0cad01907532200780aad57594899312">OnNpcSpawn</a></td></tr>
-<tr class="memdesc:a0cad01907532200780aad57594899312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raised when an NPC is spawned.  <br /></td></tr>
+<tr class="memitem:a0fd601519da874118ee3b2d3afb834a3" id="r_a0fd601519da874118ee3b2d3afb834a3"><td class="memItemLeft">Action&lt; <a class="el" href="classBBPGlue_1_1API_1_1BBPNpc.html">BBPNpc</a>, int, int &gt;?&#160;</td><td class="memItemRight"><a class="el" href="#a0fd601519da874118ee3b2d3afb834a3">OnNpcSpawned</a></td></tr>
+<tr class="memdesc:a0fd601519da874118ee3b2d3afb834a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raised when an NPC is spawned.  <br /></td></tr>
+<tr class="memitem:a96b2dfc750d91a2df6c2a32e0cd1332c" id="r_a96b2dfc750d91a2df6c2a32e0cd1332c"><td class="memItemLeft">Action&lt; <a class="el" href="classBBPGlue_1_1API_1_1BBPNpc.html">BBPNpc</a>, int, int &gt;?&#160;</td><td class="memItemRight"><a class="el" href="#a96b2dfc750d91a2df6c2a32e0cd1332c">OnNpcSpawnRequested</a></td></tr>
+<tr class="memdesc:a96b2dfc750d91a2df6c2a32e0cd1332c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raised just before an NPC is spawned.  <br /></td></tr>
 <tr class="memitem:a7e1059653820191c423949b11ea43c9a" id="r_a7e1059653820191c423949b11ea43c9a"><td class="memItemLeft">Action&lt; <a class="el" href="classBBPGlue_1_1API_1_1BBPNpc.html">BBPNpc</a>, Vector3 &gt;?&#160;</td><td class="memItemRight"><a class="el" href="#a7e1059653820191c423949b11ea43c9a">OnNpcTargetPosition</a></td></tr>
 <tr class="memdesc:a7e1059653820191c423949b11ea43c9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Raised when an NPC receives a target position.  <br /></td></tr>
 <tr class="memitem:a01b082dc52b04562f54eb667cdff62cd" id="r_a01b082dc52b04562f54eb667cdff62cd"><td class="memItemLeft">Action&lt; <a class="el" href="classBBPGlue_1_1API_1_1BBPNpc.html">BBPNpc</a>, object, Collider, bool &gt;?&#160;</td><td class="memItemRight"><a class="el" href="#a01b082dc52b04562f54eb667cdff62cd">OnNpcTriggerEnter</a></td></tr>
@@ -329,19 +331,35 @@ Events</h2></td></tr>
 
 </div>
 </div>
-<a id="a0cad01907532200780aad57594899312" name="a0cad01907532200780aad57594899312"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0cad01907532200780aad57594899312">&#9670;&#160;</a></span>OnNpcSpawn</h2>
+<a id="a0fd601519da874118ee3b2d3afb834a3" name="a0fd601519da874118ee3b2d3afb834a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0fd601519da874118ee3b2d3afb834a3">&#9670;&#160;</a></span>OnNpcSpawned</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Action&lt;<a class="el" href="classBBPGlue_1_1API_1_1BBPNpc.html">BBPNpc</a>&gt;? BBPGlue.API.BBPCallbacks.EntityCallbacks.OnNpcSpawn</td>
+          <td class="memname">Action&lt;<a class="el" href="classBBPGlue_1_1API_1_1BBPNpc.html">BBPNpc</a>, int, int&gt;? BBPGlue.API.BBPCallbacks.EntityCallbacks.OnNpcSpawned</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Raised when an NPC is spawned. </p>
+
+</div>
+</div>
+<a id="a96b2dfc750d91a2df6c2a32e0cd1332c" name="a96b2dfc750d91a2df6c2a32e0cd1332c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96b2dfc750d91a2df6c2a32e0cd1332c">&#9670;&#160;</a></span>OnNpcSpawnRequested</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Action&lt;<a class="el" href="classBBPGlue_1_1API_1_1BBPNpc.html">BBPNpc</a>, int, int&gt;? BBPGlue.API.BBPCallbacks.EntityCallbacks.OnNpcSpawnRequested</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Raised just before an NPC is spawned. </p>
 
 </div>
 </div>

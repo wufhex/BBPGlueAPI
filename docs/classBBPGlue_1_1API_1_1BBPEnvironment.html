@@ -181,8 +181,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a6b614a486fd4175f45d672354868db98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the environment spawn position and rotation.  <br /></td></tr>
 <tr class="memitem:a9f7330a9cc472c6a81fa26022d5d7fa7" id="r_a9f7330a9cc472c6a81fa26022d5d7fa7"><td class="memItemLeft">void&#160;</td><td class="memItemRight"><a class="el" href="#a9f7330a9cc472c6a81fa26022d5d7fa7">SetTimeLimit</a> (float time)</td></tr>
 <tr class="memdesc:a9f7330a9cc472c6a81fa26022d5d7fa7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the level time limit.  <br /></td></tr>
-<tr class="memitem:a5bca2a080f784fedc0e3ebe7fdccfd36" id="r_a5bca2a080f784fedc0e3ebe7fdccfd36"><td class="memItemLeft"><a class="el" href="classBBPGlue_1_1API_1_1BBPNpc.html">BBPNpc</a>?&#160;</td><td class="memItemRight"><a class="el" href="#a5bca2a080f784fedc0e3ebe7fdccfd36">SpawnNpc</a> (object npcPrefab, object gridPosition)</td></tr>
-<tr class="memdesc:a5bca2a080f784fedc0e3ebe7fdccfd36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns an NPC using a raw prefab and grid position.  <br /></td></tr>
+<tr class="memitem:a5137f3ed01f173ea3e26d301d1dbdb6e" id="r_a5137f3ed01f173ea3e26d301d1dbdb6e"><td class="memItemLeft"><a class="el" href="classBBPGlue_1_1API_1_1BBPNpc.html">BBPNpc</a>?&#160;</td><td class="memItemRight"><a class="el" href="#a5137f3ed01f173ea3e26d301d1dbdb6e">SpawnNpc</a> (<a class="el" href="classBBPGlue_1_1API_1_1BBPNpc.html">BBPNpc</a> npc, int x, int z)</td></tr>
+<tr class="memdesc:a5137f3ed01f173ea3e26d301d1dbdb6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns an NPC prefab at the specified BB+ grid cell.  <br /></td></tr>
+<tr class="memitem:a3e2793e694379c81fcf1f64683fbbda9" id="r_a3e2793e694379c81fcf1f64683fbbda9"><td class="memItemLeft"><a class="el" href="classBBPGlue_1_1API_1_1BBPNpc.html">BBPNpc</a>?&#160;</td><td class="memItemRight"><a class="el" href="#a3e2793e694379c81fcf1f64683fbbda9">SpawnNpc</a> (object npcPrefab, int x, int z)</td></tr>
+<tr class="memdesc:a3e2793e694379c81fcf1f64683fbbda9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns a raw NPC prefab at the specified BB+ grid cell.  <br /></td></tr>
 <tr class="memitem:ac155b42ede20edb36463382a18e911b6" id="r_ac155b42ede20edb36463382a18e911b6"><td class="memItemLeft"><a class="el" href="classBBPGlue_1_1API_1_1BBPNpc.html">BBPNpc</a>?&#160;</td><td class="memItemRight"><a class="el" href="#ac155b42ede20edb36463382a18e911b6">SpawnNpcAtPlayer</a> (object npcPrefab)</td></tr>
 <tr class="memdesc:ac155b42ede20edb36463382a18e911b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Spawns an NPC at the player's position.  <br /></td></tr>
 <tr class="memitem:aa8e1700190605f4f74b474b1f0d9c9c8" id="r_aa8e1700190605f4f74b474b1f0d9c9c8"><td class="memItemLeft"><a class="el" href="classBBPGlue_1_1API_1_1BBPNpc.html">BBPNpc</a>?&#160;</td><td class="memItemRight"><a class="el" href="#aa8e1700190605f4f74b474b1f0d9c9c8">SpawnNpcAtWorld</a> (object npcPrefab, Vector3 worldPosition)</td></tr>
@@ -1099,8 +1101,45 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<a id="a5bca2a080f784fedc0e3ebe7fdccfd36" name="a5bca2a080f784fedc0e3ebe7fdccfd36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5bca2a080f784fedc0e3ebe7fdccfd36">&#9670;&#160;</a></span>SpawnNpc()</h2>
+<a id="a5137f3ed01f173ea3e26d301d1dbdb6e" name="a5137f3ed01f173ea3e26d301d1dbdb6e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5137f3ed01f173ea3e26d301d1dbdb6e">&#9670;&#160;</a></span>SpawnNpc() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classBBPGlue_1_1API_1_1BBPNpc.html">BBPNpc</a>? BBPGlue.API.BBPEnvironment.SpawnNpc </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classBBPGlue_1_1API_1_1BBPNpc.html">BBPNpc</a></td>          <td class="paramname"><span class="paramname"><em>npc</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>z</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Spawns an NPC prefab at the specified BB+ grid cell. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">npc</td><td>The NPC prefab wrapper.</td></tr>
+    <tr><td class="paramname">x</td><td>Grid X coordinate.</td></tr>
+    <tr><td class="paramname">z</td><td>Grid Z coordinate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The spawned NPC, or null if spawning fails.</dd></dl>
+
+</div>
+</div>
+<a id="a3e2793e694379c81fcf1f64683fbbda9" name="a3e2793e694379c81fcf1f64683fbbda9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e2793e694379c81fcf1f64683fbbda9">&#9670;&#160;</a></span>SpawnNpc() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1113,16 +1152,22 @@ Properties</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">object</td>          <td class="paramname"><span class="paramname"><em>gridPosition</em></span>&#160;)</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>x</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>z</em></span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Spawns an NPC using a raw prefab and grid position. </p>
+<p>Spawns a raw NPC prefab at the specified BB+ grid cell. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">npcPrefab</td><td>The raw NPC prefab.</td></tr>
-    <tr><td class="paramname">gridPosition</td><td>The target grid position.</td></tr>
+    <tr><td class="paramname">x</td><td>Grid X coordinate.</td></tr>
+    <tr><td class="paramname">z</td><td>Grid Z coordinate.</td></tr>
   </table>
   </dd>
 </dl>
