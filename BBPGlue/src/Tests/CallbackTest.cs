@@ -58,7 +58,14 @@ namespace BBPGlue.Core
                     $"Spawning {npc.Name} at cell ({x}, {z})"
                 );
             };
-            
+
+            BBP.Callbacks.Entity.OnNpcSpawned += (npc, x, z) =>
+            {
+                BBPConsole.Log(
+                    $"Spawned {npc.Name} at cell ({x}, {z})"
+                );
+            };
+
             BBP.Callbacks.Entity.OnNpcDespawn += npc => Log($"NPC Despawn: {npc.Character}");
             BBP.Callbacks.Entity.OnNpcHearNoise += npc => Log($"NPC Hear Noise: {npc.Character}");
             BBP.Callbacks.Entity.OnNpcSightPlayer += npc => Log($"NPC Sight Player: {npc.Character}");

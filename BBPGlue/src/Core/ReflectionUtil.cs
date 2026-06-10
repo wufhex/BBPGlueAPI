@@ -11,22 +11,22 @@ namespace BBPGlue.Core
             BindingFlags.Instance |
             BindingFlags.Static;
 
-    public static object? CreateInstance(string className, params object[] args)
-    {
-        Type? type = ReflectionCache.GetType(className);
-
-        if (type == null)
-            return null;
-
-        try
+        public static object? CreateInstance(string className, params object[] args)
         {
-            return Activator.CreateInstance(type, args);
+            Type? type = ReflectionCache.GetType(className);
+
+            if (type == null)
+                return null;
+
+            try
+            {
+                return Activator.CreateInstance(type, args);
+            }
+            catch
+            {
+                return null;
+            }
         }
-        catch
-        {
-            return null;
-        }
-    }
 
         public static T? GetField<T>(object? instance, string fieldName)
         {

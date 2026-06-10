@@ -10,22 +10,26 @@ namespace BBPGlue.Patches
     [HarmonyPatch]
     public static class EnvironmentSpawnNpcPatch
     {
-        [HarmonyTargetMethod]
-        private static MethodBase? TargetMethod()
+        public static MethodBase? TargetMethod()
         {
-            return AccessTools.Method(
-                AccessTools.TypeByName("EnvironmentController"),
+            Type? type = Type.GetType("EnvironmentController, Assembly-CSharp");
+            Type? npcType = Type.GetType("NPC, Assembly-CSharp");
+            Type? intVector2Type = Type.GetType("IntVector2, Assembly-CSharp");
+
+            if (type == null || npcType == null || intVector2Type == null)
+                return null;
+
+            return type.GetMethod(
                 "SpawnNPC",
-                new[]
-                {
-                    AccessTools.TypeByName("NPC"),
-                    AccessTools.TypeByName("IntVector2")
-                }
+                BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic,
+                null,
+                new[] { npcType, intVector2Type },
+                null
             );
         }
 
         [HarmonyPrefix]
-        private static bool Prefix(
+        public static bool Prefix(
             object npc,
             object position,
             ref object? __result
@@ -51,7 +55,7 @@ namespace BBPGlue.Patches
         }
 
         [HarmonyPostfix]
-        private static void Postfix(
+        public static void Postfix(
             object? __result,
             object position
         )
