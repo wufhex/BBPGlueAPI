@@ -18,7 +18,7 @@ namespace BBPGlue
         public const  string Name        = "BBP Glue";
         public const  string Version     = "0.0.1";
 
-        private const string GameVersion = "0.14.2";
+        private const string GameVersion = "0.14.3";
         private const string HrmPkg      = ".patches"; 
         
         private Harmony? _harmony;

@@ -353,7 +353,7 @@ This warning is informational and does not necessarily indicate a problem.
 Alpha Limitations:
 - API may change
 - Some callbacks may be incomplete or untested
-- Compatibility only tested on BB+ 0.14.2
+- Compatibility only tested on BB+ 0.14.3
 - Advanced custom NPC behavior is experimental and might be untested
 
 # FAQ
